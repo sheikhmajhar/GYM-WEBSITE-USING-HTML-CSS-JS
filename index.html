@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <div class="logo-png">
+            <a href="#">
+                <h3>FitZone</h3>
+            </a>
+        </div>
+
+        <div class="link">
+            <ul class="a">
+                <li class="hover-link nav-item">Home</li>
+                <li class="hover-link nav-item">Challenges</li>
+                <li class="hover-link nav-item">Plans</li>
+                <li class="hover-link nav-item">Member</li>
+                <li class="hover-link nav-item">Contact</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="main-text">
+            <h1>Take First Step <br> Change Yourself</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Laboriosam, animi itaque? Deleniti totam
+                fugit aliquam.</P>
+
+            <button>Challenges</button>
+        </div>
+        <img class="photo" src="gym1.png" alt="">
+    </div>
+
+
+
+
+
+    <div id="challenges">
+        <div class="head">
+            <h1>Our Challenges</h1>
+        </div>
+
+        <div class="challenge">
+            <div class="card">
+                <img src="gym0.png" alt="">
+
+                <div class="card-text">
+
+
+                    <p>Mobility Challenges</p>
+                    <p>12 Weeks</p>
+                    <button>Join</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="gym4.png" alt="">
+
+                <div class="card-text">
+                    <p>Mobility Challenges</p>
+                    <p>12 Weeks</p>
+                    <button>Join</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="gym5.png" alt="">
+
+                <div class="card-text">
+                    <p>Mobility Challenges</p>
+                    <p>12 Weeks</p>
+                    <button>Join</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="plans">
+            <div class="head">
+                <h1>Our Plans</h1>
+            </div>
+            <div class="plan">
+                <div class="planCard">
+                    <h2>Basic Member</h2>
+
+                    <p>$10/month
+                    <p>
+                    <p>Full Day acess of gym</p>
+                    <p>Customer Support</p>
+                    <p>Standard Option</p>
+                    <p>Personal Trainer</p>
+
+
+
+                    <button>Buy Now</button>
+                </div>
+                <div class="planCard">
+                    <h2>Premium Member</h2>
+                    <p>$30/month
+                    <p>
+                    <p>Full Day acess of gym</p>
+                    <p>Customer Support</p>
+                    <p>Standard Option</p>
+                    <p>Personal Trainer</p>
+
+
+
+                    <button>Buy Now</button>
+                </div>
+                <div class="planCard">
+                    <h2>Standard Member</h2>
+                    <p>$20/month
+                    <p>
+                    <p>Full Day acess of gym</p>
+                    <p>Customer Support</p>
+                    <p>Standard Option</p>
+                    <p>Personal Trainer</p>
+
+
+
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="member">
+            <div class="head">
+                <h4>Our Members</h4>
+            </div>
+            <div class="member">
+                <div class="slider">
+                    <img src="gym0.png" alt="">
+                    <img src="gym1.png" alt="">
+                    <img src="gym4.png" alt="">
+
+                </div>
+                <div class="slider">
+                    <img src="gym5.png" alt="">
+                    <img src="gym6.png" alt="">
+                    <img src="gym7.png" alt="">
+
+                </div>
+                <div class="slider">
+                    <img src="gym8.png" alt="">
+                    <img src="gym9.png" alt="">
+                    <img src="gym10.png" alt="">
+
+                </div>
+                <div class="slider">
+                    <img src="gym0.png" alt="">
+                    <img src="gym1.png" alt="">
+                    <img src="gym4.png" alt="">
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="contact">
+            <div class="head1">
+                <h1>Connect With Us</h4>
+            </div>
+            <div class="connect">
+
+                <input type="text" placeholder="Enter Your Name" id="name">
+                <input type="text" placeholder="Enter Your Email" id="Email">
+                <input type="Password" placeholder="Enter Your Password" id="Password">
+
+                <button id="connect">Connect</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="text">
+                <h4>About</h4>
+                <p>Our Plans</p>
+                <p>Best Price</p>
+                <p>Trainers</p>
+                <p>Support</p>
+            </div>
+            <div class="text">
+                <h4>plans</h4>
+                <p>Best Plans</p>
+                <p>Affordable</p>
+                <p>Trainer</p>
+                <p>Quality</p>
+            </div>
+            <div class="text">
+                <h4>Connect Us</h4>
+                <p>Linkedin</p>
+                <p>Github</p>
+                <p>Twitter</p>
+                <p>Youtube</p>
+            </div>
+            <div class="text">
+                <h4>Offer's</h4>
+                <p>20% off</p>
+                <p>New Members</p>
+                <p>Limited Seats</p>
+                <p>Buy Now</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let card = document.querySelectorAll(".slider")
+        let challenge = document.querySelectorAll(".card")
+        let connect = document.getElementById("connect")
+
+
+        let count = 0
+
+        card.forEach(function (cards, index) {
+            cards.style.left = `${index * 100}%`
+        })
+
+
+        function myfun() {
+            card.forEach(function (curVal) {
+                curVal.style.transform = `translateX(-${100 * count}%)`
+            })
+
+        }
+        setInterval(function () {
+            count++
+            if (count == card.length) {
+                count = 0
+            }
+            myfun()
+        }, 2000)
+
+        challenge.forEach(function (detail) {
+            detail.addEventListener("click", function () {
+                document.querySelector(".container").innerHTML = "";
+
+
+
+                let div = document.createElement("div")
+
+
+
+                div.classList.add("detailCard")
+                div.innerHTML = `
+                <h2>Challenges</h2>
+                <p>12 Weeks</p>
+                <img src=${detail.firstElementChild.src} alt="">
+                <h3>About</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi totam illum, quisquam officiis sit aliquam at quis vero eius culpa, doloremque autem.</p>
+                <button>Join</button>
+                <a href="">Back</a>
+
+                `
+                document.querySelector("body").appendChild(div)
+
+
+
+                console.log(detail.firstElementChild)
+            })
+        })
+
+        connect.addEventListener("click", function () {
+            let name = document.getElementById("name")
+            let email = document.getElementById("email")
+            let Password = document.getElementById("password")
+
+            if (name.value == "" || email.value == "" || Password.vlaue == "") {
+                alert("Please enter Your Details")
+            } else {
+                alert("THANKS FOR CONNECTING")
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
